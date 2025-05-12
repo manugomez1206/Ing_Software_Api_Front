@@ -21,7 +21,3 @@ export async function GET() {
     const data = snapshot.docs.map((doc) => ({ ...doc.data() }));
     return NextResponse.json(data);
 }
-
-
-
-
